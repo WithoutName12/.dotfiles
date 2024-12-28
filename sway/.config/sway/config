@@ -237,8 +237,10 @@ mode "resize" {
 
 
 #Status bar
-exec_always --no-startup-id killall waybar
-exec_always --no-startup-id waybar
+
+bar { 
+     swaybar_command waybar
+}
 
 #Clipman
 exec wl-paste -t text --watch clipman store --max-items=15
