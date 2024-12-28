@@ -1,10 +1,10 @@
-# Configuration for perfect system.
-
-Distro: Arch Linux
-DE: Sway
-Display Server: Wayland 
-Sound System: Pipewire
-Bar: Waybar 
+# Configuration for perfect system.__
+__
+Distro: Arch Linux__
+DE: Sway__
+Display Server: Wayland__
+Sound System: Pipewire__
+Bar: Waybar__
 App-menu: Wofi 
 Terminal: Kitty
 TextEditor: Nvim LazyVim
