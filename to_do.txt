@@ -1,0 +1,3 @@
+#To_Do
+
+1. Have to add bluetooth functionality to waybar.
