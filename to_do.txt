@@ -1,3 +1,4 @@
 #To_Do
 
 1. Have to add bluetooth functionality to waybar.
+2. Should read about catppuccin colour scheme and change configs with them, if i like it. 
