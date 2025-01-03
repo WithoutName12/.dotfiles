@@ -14,6 +14,8 @@ You need to add nvim/python.lua (It's auto-complete of python, as I remember) to
   
 Needed packages (Arch): ttf-jetbrains-mono-nerd ,ttf-font-awesome, ttf-dejavu (For Georgian), sway, waybar, wofi, grim, slurp, swappy, clipman, kitty, nvim, pipewire, wayland, networkmanager.  
   
+Add wofi-emoji in /usr/local/bin/wofi-emoji  (Also you can just take it from official repo)  
+  
 Add wallpaper to /usr/share/backgrounds/    
   
 To connect wifi use nmtui (Comes with networkmanager).  
