@@ -29,6 +29,12 @@ input "type:keyboard" {
     xkb_options grp:alt_shift_toggle
 }
 
+#NO Border
+default_border pixel 2
+
+#Border enable 
+#bindsym $mod+Escape exec $HOME/.config/sway/toggle_border.sh
+
 #Screenshot 
 
 bindsym $mod+Print exec grim -g "$(slurp)" - | swappy -f -
@@ -222,16 +228,16 @@ mode "resize" {
     # right will grow the containers width
     # up will shrink the containers height
     # down will grow the containers height
-    bindsym $left resize shrink width 10px
-    bindsym $down resize grow height 10px
-    bindsym $up resize shrink height 10px
-    bindsym $right resize grow width 10px
+    bindsym $left resize shrink width 40px
+    bindsym $down resize grow height 40px
+    bindsym $up resize shrink height 40px
+    bindsym $right resize grow width 40px
 
     # Ditto, with arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Left resize shrink width 40px
+    bindsym Down resize grow height 40px
+    bindsym Up resize shrink height 40px
+    bindsym Right resize grow width 40px
 
     # Return to default mode
     bindsym Return mode "default"
@@ -248,7 +254,7 @@ bar {
 }
 
 #Clipman
-exec wl-paste -t text --watch clipman store --max-items=15
+exec wl-paste -t text --watch clipman store --no-persist --max-items=15
 bindsym $mod+Shift+v exec clipman pick -t wofi
 
 
