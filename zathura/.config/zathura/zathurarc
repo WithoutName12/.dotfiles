@@ -6,7 +6,6 @@ set adjust-open width
 
 
 set recolor false
-set sandbox none
 set selection-clipboard clipboard
 set statusbar-h-padding 0
 set statusbar-v-padding 0
@@ -22,6 +21,9 @@ map A zoom in
 map D zoom out
 map i recolor
 map p print
+map H exec "$HOME/highlight_zathura '$FILE' $PAGE"
 set font                        "Jetbrains Mono 9"
 #prime one
 map b toggle_statusbar
+set database sqlite
+
