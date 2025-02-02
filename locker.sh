@@ -1,0 +1,20 @@
+#!/bin/bash
+# Replace this with your actual keyboard identifier.
+KEYBOARD="1:1:AT_Translated_Set_2_keyboard"
+
+# Disable keyboard input.
+swaymsg "input $KEYBOARD events disabled"
+
+# Start swaylock.
+swaylock &
+LOCK_PID=$!
+
+# Wait 5 minutes (300 seconds).
+sleep 300
+
+# Re-enable keyboard input.
+swaymsg "input $KEYBOARD events enabled"
+
+# Optionally, wait for swaylock to finish.
+wait $LOCK_PID
+
