@@ -21,7 +21,7 @@ font pango: JetBrainsMono Nerd Font 14
 set $mod Mod4
 
 #Rofi
-bindsym $mod+space exec /home/arch/.config/wofi/launch.sh
+bindsym $mod+space exec $HOME/.config/wofi/launch.sh
 
 #Keyboard layout changer
 input "type:keyboard" {
