@@ -52,12 +52,12 @@
     },
     "custom/powermenu": {
         "return-type": "json",
-        "exec": "/home/arch/.config/waybar/modules/powermenu.sh",
+        "exec": "$HOME/.config/waybar/modules/powermenu.sh",
         "format": "<span font='Font Awesome 5 Free 9'></span>  {}",
         "format-icons": [""],
         "interval": 3600,
         "escape": true,
-        "on-click": "/home/arch/.config/wofi/wofi-power.sh"
+        "on-click": "$HOME/.config/wofi/wofi-power.sh"
     },
     "custom/recorder": {
         "format": "!",
