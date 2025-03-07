@@ -5,7 +5,7 @@
     "height": 40,
     "modules-left": ["sway/workspaces", "sway/mode", "sway/window"],
     "modules-center": ["clock"],
-    "modules-right": ["custom/recorder", "tray", "pulseaudio", "backlight", "temperature", "cpu", "memory", "battery", "network", "custom/powermenu"],
+    "modules-right": ["custom/recorder", "tray", "pulseaudio", "backlight", "temperature", "memory", "battery", "network", "custom/powermenu"],
     "sway/mode": {
         "format": " {}"
     },
@@ -29,7 +29,7 @@
     },
     "tray": {
         "icon-size": 20,
-        "spacing": 8
+        "spacing": 8,
     },
     "sway/window": {
         "max-length": 60,

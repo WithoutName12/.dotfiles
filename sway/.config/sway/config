@@ -4,6 +4,8 @@
 #
 # Read `man 5 sway` for a complete reference.
 
+#output * scale 1.25
+
 #Touchpad (tap to click) 
 input "type:touchpad" {
     dwt enabled
