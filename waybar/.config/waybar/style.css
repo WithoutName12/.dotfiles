@@ -1,10 +1,10 @@
 #waybar {
     font-family: "JetBrainsMono Nerd Font", Cantarell, Noto Sans, sans-serif;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 #window {
-    padding: 0 12.5px;
+    padding: 0 10px;
 }
 
 window#waybar {
@@ -14,19 +14,19 @@ window#waybar {
     text-shadow: none;
     transition-duration: 0s;
     color: rgba(217, 216, 216, 1);
-    background: #1a1b26;
-}
+    background: #1a1b26; 
+} 
 
 #workspaces {
-    margin: 0 6.25px;
+    margin: 0 5px;
 }
 
 #workspaces button {
-    padding: 0 10px;
+    padding: 0 8px;
     color: #565f89;
     border: 3px solid rgba(9, 85, 225, 0);
-    border-radius: 12.5px;
-    min-width: 41.25px;
+    border-radius: 10px;
+    min-width: 33px;
 }
 
 #workspaces button.visible {
@@ -49,18 +49,24 @@ window#waybar {
     color: #bb9af7;
 }
 
+/* Repeat style here to ensure properties are overwritten as there's no !important and button:hover above resets the colour */
+
 #workspaces button.focused {
     color: #7aa2f7;
 }
-
 #workspaces button.focused:hover {
     color: #bb9af7;
 }
 
+/*#pulseaudio {
+    font-size: 26px; 
+}
+*/
+
 #custom-recorder {
-    font-size: 22.5px;
-    margin: 2.5px 8.75px 0px 8.75px;
-    color: #ee2e24;
+	font-size: 18px;
+	margin: 2px 7px 0px 7px;
+	color:#ee2e24;
 }
 
 #tray,
@@ -81,9 +87,15 @@ window#waybar {
 #custom-weather,
 #custom-mail,
 #custom-media {
-    margin: 0px 0px 0px 12.5px;
-    padding: 0 6.25px;
+    margin: 0px 0px 0px 10px;
+    padding: 0 5px;
+    /* border-top: 3px solid rgba(217, 216, 216, 0.5); */
 }
+
+/* #clock {
+    margin:     0px 16px 0px 10px;
+    min-width:  140px;
+} */
 
 #battery.warning {
     color: rgba(255, 210, 4, 1);
