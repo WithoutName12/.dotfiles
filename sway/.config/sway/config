@@ -4,8 +4,6 @@
 #
 # Read `man 5 sway` for a complete reference.
 
-#output * scale 1.25
-
 #Touchpad (tap to click) 
 input "type:touchpad" {
     dwt enabled
@@ -24,6 +22,12 @@ set $mod Mod4
 
 #Rofi
 bindsym $mod+space exec $HOME/.config/wofi/launch.sh
+
+#Notifications 
+exec swaync 
+
+# Toggle control center
+bindsym $mod+Shift+n exec swaync-client -t -sw
 
 #Keyboard layout changer
 input "type:keyboard" {
