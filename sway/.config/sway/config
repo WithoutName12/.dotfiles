@@ -256,11 +256,9 @@ mode "resize" {
 
 #Status bar
 
-bar { 
+bar {
      swaybar_command waybar
-     position top 
-     mode dock
-     modifier Mod4
+     position top
 }
 
 #Status bar toggle on and off
