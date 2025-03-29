@@ -7,8 +7,8 @@
 **Bar:** Waybar  
 **App-menu:** Wofi   
 **Terminal:** Kitty  
-**TextEditor:** Nvim LazyVim 
-**Notification daemon:** swaync 
+**TextEditor:** Nvim LazyVim  
+**Notification daemon:** swaync  
 **Font:** JetBrainsMono Nerd fonts  
   
 You need to add nvim/python.lua (It's auto-complete of python) to *~/.config/nvim/lua/plugins/python.lua*  
