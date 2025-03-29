@@ -38,6 +38,9 @@ input "type:keyboard" {
 #NO Border
 default_border pixel 2
 
+#Gaps 
+
+
 #Border enable 
 #bindsym $mod+Escape exec $HOME/.config/sway/toggle_border.sh
 
@@ -252,12 +255,16 @@ mode "resize" {
 
 
 #Status bar
-#exec_always --no-startup-id killall waybar
-#exec_always --no-startup-id waybar
 
 bar { 
      swaybar_command waybar
+     position top 
+     mode dock
+     modifier Mod4
 }
+
+#Status bar toggle on and off
+bindsym $mod+Shift+f exec $HOME/.config/sway/hide_waybar.sh
 
 #Clipman
 exec wl-paste -t text --watch clipman store --no-persist --max-items=15
