@@ -65,7 +65,6 @@ bindsym $mod+Print exec grim -g "$(slurp)" - | swappy -f -
 #bindsym Shift+alt+Print exec sway-screenshot -m region | wl-copy
 
 #wofi-emoji
-
 bindsym $mod+period exec /usr/local/bin/wofi-emoji
 
 # Home row direction keys, like vim
@@ -81,7 +80,7 @@ set $menu wmenu-run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/my_wallpaper.png fill
+output * bg /usr/share/backgrounds/anime_girl_block.png fill
 #i
 # Example configuration:
 #
@@ -91,15 +90,13 @@ output * bg /usr/share/backgrounds/my_wallpaper.png fill
 
 ### Idle configuration
 #
-# Example configuration:
+exec swayidle -w \
+          timeout 298 'swaylock -f -c 000000' \
+          timeout 300 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
+          before-sleep 'swaylock -f -c 000000'
 #
-# exec swayidle -w \
-#          timeout 300 'swaylock -f -c 000000' \
-#          timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-#          before-sleep 'swaylock -f -c 000000'
-#
-# This will lock your screen after 300 seconds of inactivity, then turn off
-# your displays after another 300 seconds, and turn your screens back on when
+# This will lock your screen after 298 seconds of inactivity, then turn off
+# your displays , and turn your screens back on when
 # resumed. It will also lock your screen before your computer goes to sleep.
 
 ### Input configuration
@@ -125,9 +122,6 @@ output * bg /usr/share/backgrounds/my_wallpaper.png fill
 
     # Kill focused window
     bindsym $mod+Shift+q kill
-
-    # Start your launcher
-    bindsym $mod+d exec $menu
 
     # Drag floating windows by holding down $mod and left mouse button.
     # Resize them with right mouse button + $mod.
@@ -256,7 +250,7 @@ mode "resize" {
 
 #Status bar
 
-bar {
+bar { 
      swaybar_command waybar
      position top
 }
@@ -282,7 +276,5 @@ bindsym $mod+r mode "resize"
     # Special keys to adjust brightness via brightnessctl
     bindsym --locked XF86MonBrightnessDown exec brightnessctl set 5%-
     bindsym --locked XF86MonBrightnessUp exec brightnessctl set 5%+
-    # Special key to take a screenshot with grim
-    #bindsym Print exec grim
 
 include /etc/sway/config.d/*
