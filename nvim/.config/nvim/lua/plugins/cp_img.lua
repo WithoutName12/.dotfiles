@@ -3,7 +3,10 @@ return {
     event = "VeryLazy",
     opts = {
         default = {
-            dir_path = "assets/img/posts",
+            dir_path = function()
+                local filename = vim.fn.expand("%:t:r")
+                return "assets/img/" .. filename
+            end,
         },
     },
     keys = {
