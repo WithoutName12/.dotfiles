@@ -4,12 +4,12 @@ set adjust-open "best-fit"
 
 set adjust-open width
 
-
+#set browser "xdg-open"
 set recolor false
 set selection-clipboard clipboard
 set statusbar-h-padding 0
 set statusbar-v-padding 0
-set page-padding 1
+# unknown option error: set page-padding 1
 map u scroll half-up
 map d scroll half-down
 map T toggle_page_mode
@@ -21,7 +21,7 @@ map A zoom in
 map D zoom out
 map i recolor
 map p print
-map H exec "$HOME/highlight_zathura '$FILE' $PAGE"
+map H exec "/home/mikheil/highlight_zathura '$FILE' $PAGE"
 set font                        "Jetbrains Mono 9"
 #prime one
 map b toggle_statusbar
