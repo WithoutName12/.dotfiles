@@ -3,7 +3,8 @@
 # thus when second monitor is plugged in one of them, is disabled
 
 # Put it in ~/.local/bin/auto-audio-profile.sh
-!/usr/bin/env bash
+
+#!/usr/bin/env bash
 CARD="alsa_card.pci-0000_00_1f.3-platform-skl_hda_dsp_generic"
 HP="HiFi (HDMI1, HDMI2, HDMI3, Headphones, Mic1, Mic2)"
 SPK="HiFi (HDMI1, HDMI2, HDMI3, Mic1, Mic2, Speaker)"

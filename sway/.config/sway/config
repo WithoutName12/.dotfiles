@@ -122,8 +122,11 @@ exec swayidle -w \
 # You can get the names of your inputs by running: swaymsg -t get_inputs
 # Read `man 5 sway-input` for more information about this section.
 
-### Multimedia control:
+# Multimedia control:
 bindsym $mod+p exec playerctl play-pause
+
+# Laptop monitor on/off 
+bindsym $mod+m exec swaymsg output eDP-1 toggle
 
 #should fix to add to make screeen turn off
     bindsym $mod+control+l exec swaylock -f -c 000000
